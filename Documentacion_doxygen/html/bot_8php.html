@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>My Proyect: Referencia del Archivo D:/aleja/Escritorio/MEDAC/2DAW/Despliegue_App_Web/Practicas/Practica_Final/bot.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    <li>
+      <form action="search.php" method="get">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td><label>&nbsp;Buscar&nbsp;</label></td>
+            <td><input type="text" name="query" value="" size="20" accesskey="s"/></td>
+          </tr>
+        </table>
+      </form>
+    </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referencia del Archivo D:/aleja/Escritorio/MEDAC/2DAW/Despliegue_App_Web/Practicas/Practica_Final/bot.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Funciones</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">switch($message)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#599c74282e631b29b57fd770f5a8249d">sendMessage</a> ($chatId, $response)</td></tr>
+
+<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#00ae4fcafb1145f5e968bdf920f83e2e">$token</a> = '6263150732:AAHfCCDp8ZAKUqm0SjLqlvoIcuqvZio7Y2A'</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#2887d41d3bb2498db735eeb87efa2d73">$website</a> = 'https://api.telegram.org/bot' . $token</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#69b271260be394b90709736cccb22c76">$input</a> = file_get_contents('php://input')</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#13a7db07df65d01cfbca768f443084cc">$update</a> = json_decode($input, TRUE)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#f4ae442f724247cfd812b0c1bcea2fcb">$chatId</a> = $update['message']['chat']['id']</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="bot_8php.html#bf17cb2dba2ed17cb28aa5f37deb5293">$message</a> = $update['message']['text']</td></tr>
+
+</table>
+<hr><h2>Documentación de las funciones</h2>
+<a class="anchor" name="599c74282e631b29b57fd770f5a8249d"></a><!-- doxytag: member="bot.php::sendMessage" ref="599c74282e631b29b57fd770f5a8249d" args="($chatId, $response)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch ($message) sendMessage           </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>chatId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>response</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>Documentación de las variables</h2>
+<a class="anchor" name="f4ae442f724247cfd812b0c1bcea2fcb"></a><!-- doxytag: member="bot.php::$chatId" ref="f4ae442f724247cfd812b0c1bcea2fcb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$chatId = $update['message']['chat']['id']          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="69b271260be394b90709736cccb22c76"></a><!-- doxytag: member="bot.php::$input" ref="69b271260be394b90709736cccb22c76" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$input = file_get_contents('php://input')          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bf17cb2dba2ed17cb28aa5f37deb5293"></a><!-- doxytag: member="bot.php::$message" ref="bf17cb2dba2ed17cb28aa5f37deb5293" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$message = $update['message']['text']          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="00ae4fcafb1145f5e968bdf920f83e2e"></a><!-- doxytag: member="bot.php::$token" ref="00ae4fcafb1145f5e968bdf920f83e2e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$token = '6263150732:AAHfCCDp8ZAKUqm0SjLqlvoIcuqvZio7Y2A'          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="13a7db07df65d01cfbca768f443084cc"></a><!-- doxytag: member="bot.php::$update" ref="13a7db07df65d01cfbca768f443084cc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$update = json_decode($input, TRUE)          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2887d41d3bb2498db735eeb87efa2d73"></a><!-- doxytag: member="bot.php::$website" ref="2887d41d3bb2498db735eeb87efa2d73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$website = 'https://api.telegram.org/bot' . $token          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Sat Mar 4 18:05:42 2023 para My Proyect por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>
